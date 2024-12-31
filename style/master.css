@@ -22,10 +22,8 @@ a {
   gap: 5vh;
 }
 .opcoesmenu {
-  font-family: "Noto Sans", serif;
   font-weight: 600;
   font-size: 18px;
-  color: rgba(251, 251, 251, 1);
   display: flex;
   list-style: none;
   gap: 5vh;
@@ -42,10 +40,66 @@ a {
   padding: 5px 5px 5px 5px;
 }
 .pesquisa::placeholder {
-  font-family: "Noto Sans", serif;
   font-weight: 600;
-  color: white;
   display: flex;
   font-size: 15px;
   text-align: center;
+}
+.opcoesmenu,
+.pesquisa::placeholder,
+.titulodestaque,
+.destaqueprincipal button {
+  font-family: "Noto Sans", serif;
+  color: white;
+  margin: 0px;
+}
+#destaquenavegacao {
+  margin: 20px 40px;
+  display: flow-root;
+}
+.destaqueconteudo {
+  display: flex;
+  gap: 10px;
+}
+.destaqueprincipal {
+  position: relative;
+  display: inline-block;
+}
+.destaqueprincipal img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.destaqueprincipal .botaoum {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  padding: 10px 20px;
+  background-color: rgba(6, 132, 34, 1);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.destaqueprincipal .botaodois {
+  position: absolute;
+  top: 80%;
+  left: 25%;
+  padding: 10px 20px;
+  background-color: rgba(6, 132, 34, 1);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.titulodestaque {
+  margin-bottom: 20px;
+}
+.destaquesecundario {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
