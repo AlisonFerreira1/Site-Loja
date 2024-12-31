@@ -48,27 +48,26 @@ a {
 .opcoesmenu,
 .pesquisa::placeholder,
 .titulodestaque,
-.destaqueprincipal button {
+.destaqueprincipal button,
+.titulosgames {
   font-family: "Noto Sans", serif;
   color: white;
   margin: 0px;
 }
 #destaquenavegacao {
-  margin: 20px 40px;
+  margin: 20px 120px;
   display: flow-root;
 }
 .destaqueconteudo {
   display: flex;
-  gap: 10px;
+  gap: 30px;
 }
 .destaqueprincipal {
   position: relative;
   display: inline-block;
 }
-.destaqueprincipal img {
-  display: block;
-  width: 100%;
-  height: auto;
+.destaqueprincipal .imagemdestaque {
+  border-radius: 15px;
 }
 .destaqueprincipal .botaoum {
   position: absolute;
@@ -87,14 +86,19 @@ a {
   top: 80%;
   left: 25%;
   padding: 10px 20px;
-  background-color: rgba(6, 132, 34, 1);
-  border: none;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.027),
+    rgba(255, 255, 255, 0)
+  );
+  -webkit-backdrop-filter: blur();
+  backdrop-filter: blur(1px);
   border-radius: 5px;
+  border: rgba(255, 255, 255, 0.171);
   font-size: 16px;
+  box-shadow: 1px 1px 20px rgb(0, 0, 0);
   cursor: pointer;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
-
 .titulodestaque {
   margin-bottom: 20px;
 }
@@ -102,4 +106,14 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.imgdestaque {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+.imgdestaque img {
+  border: 2px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 5px;
 }
