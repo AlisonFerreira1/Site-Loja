@@ -17,7 +17,7 @@
   <body>
     <header id="barranavegacao">
       <nav class="conteudodabarra">
-        <img src="..\img\logo loja.svg" alt="logo" />
+        <img src="..\img\logo loja.svg" alt="logo" class="logo"/>
         <ul class="opcoesmenu">
           <li><a href="">Loja</a></li>
           <li><a href="">Categoria</a></li>
@@ -29,8 +29,10 @@
         <label for="pesquisa">
           <input class="pesquisa" placeholder="Pesquise Aqui" type="text" />
         </label>
-        <a href=""> <img src="../../img/icon compra.svg" alt="buy" /></a>
-        <a href=""> <img src="../../img/icon usuario.svg" alt="user" /></a>
+        <div class="iconsnav">          
+          <a href=""> <img src="../../img/icon compra.svg" alt="buy" /></a>
+          <a href=""> <img src="../../img/icon usuario.svg" alt="user" /></a>
+        </div>
       </nav>
     </header>
 
@@ -41,12 +43,14 @@
           <div class="destaqueprincipal">
             <a aria-label="link" type="link" href="http://www.youtube.com/">
               <img src="../../img/bannerjogo.svg" alt="" class="imagemdestaque"/>
-              <a href="http://www.twitch.tv/yetz">
-                <button aria-label="button" type="button" class="botaoum">Compre agora</button>
-              </a>
-              <a href="">
-                <button aria-label="buttontwo" type="button" class="botaodois">+ lista de desejo</button>
-              </a>
+              <div class="botoes">
+                <a href="http://www.twitch.tv/yetz">
+                  <button aria-label="button" type="button" class="botaoum">Compre agora</button>
+                </a>
+                <a href="">
+                  <button aria-label="buttontwo" type="button" class="botaodois">+ lista de desejo</button>
+                </a>
+              </div>
             </a>
           </div>
           <div class="destaquesecundario">
@@ -73,12 +77,9 @@
           </div>
         </section>
         </div>
-      <h1>jogos gratuitos</h1>
+      <h1></h1>
       <section>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus
-        quia, iusto doloribus a iure distinctio in quod pariatur maxime
-        molestiae aperiam, consequatur incidunt culpa molestias rerum recusandae
-        sit unde?
+        
       </section>
     </main>
 
